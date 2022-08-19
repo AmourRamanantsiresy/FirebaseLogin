@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { changePrincipalStateTemplate, closeSnackBar } from './components/Utils/Utils';
+import { changePrincipalStateTemplate, closeSnackBar, getLoginType } from './components/Utils/Utils';
 import { IPrincipalState } from './components/Global/ContextData/ContextDataInterface';
 import { Login } from './Pages/Login/Login';
 import { HomePage } from './Pages/HomePage/HomePage';
@@ -25,7 +25,8 @@ function App() {
                     token: user.refreshToken || 'token',
                     email: user.email || 'email',
                     name: user.displayName || '',
-                    profilePic: user.photoURL || ''
+                    profilePic: user.photoURL || '',
+                    loginType: getLoginType(user.photoURL || ''),
                 }));
             } else {
                 setState((initialState) => ({

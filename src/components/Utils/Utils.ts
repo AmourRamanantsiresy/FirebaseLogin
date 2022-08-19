@@ -1,6 +1,6 @@
 import { DS } from '../Types/Utils';
 import { ISignUpInformation } from '../Interfaces/Login';
-import { ConnectionState, IAlertState, IPrincipalValues } from '../Global/Variables/VariablesInterface';
+import { ConnectionState, IAlertState, IPrincipalValues, LoginType } from '../Global/Variables/VariablesInterface';
 import { snackBarInitialState } from '../Global/Variables/Variables';
 
 export function handleChangeTemplate<T1, T2>(value: T1, setState: DS<T2>): void {
@@ -39,3 +39,16 @@ export const setSnackBarSuccess = (setAlert: DS<IAlertState>, label: string): vo
 export const setSnackBarMessage = (setAlert: DS<IAlertState>, label: string): void => {
     setAlert({ label, open: true, type: 'Message' });
 };
+
+export const getLoginType = (url?: string): LoginType{
+    if(url !== undefined){
+        if(url.includes('github')){
+            return 'github'
+        }else if(url.includes('google')){
+            return 'google'
+        }else if(url.includes('facebook')){
+            return 'facebook'
+        }
+    }
+    return 'password';
+}
