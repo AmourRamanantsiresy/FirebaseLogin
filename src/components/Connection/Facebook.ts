@@ -9,7 +9,6 @@ export function facebookSignIn(state: IPrincipalState) {
         .then((result) => {
             const user = result.user;
             if (state.setState !== undefined) {
-                console.log(user);
                 state.setState((e) => ({
                     ...e,
                     email: user.email || '',
