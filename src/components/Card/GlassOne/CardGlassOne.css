@@ -1,0 +1,86 @@
+.lc-container {
+    height: 60vh;
+    width: 50vw;
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    .lc-container {
+        height: 60vh;
+        width: 60vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .lc-container {
+        height: 60vh;
+        width: 70vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .lc-container {
+        height: 60vh;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 530px) {
+    .lc-container {
+        height: 90vh;
+        width: 90vw;
+    }
+}
+
+.lc-card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.lc-card::after {
+    background: linear-gradient(-135deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.3));
+    content: '';
+    height: 120%;
+    width: 120%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.lc-round {
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    box-shadow: -2px -2px 5px black;
+}
+
+.lc-round--1 {
+    height: 15rem;
+    width: 15rem;
+    background: rgb(228, 51, 255);
+    right: -25%;
+    top: -25%;
+}
+
+.lc-round--2 {
+    height: 10rem;
+    width: 10rem;
+    background: rgb(82, 255, 255);
+    left: -10%;
+    top: 10%;
+}
+
+.lc-round--3 {
+    height: 50rem;
+    width: 50rem;
+    background: rgb(255, 51, 167);
+    left: 10%;
+    top: 60%;
+    box-shadow: -5px -5px 5px black;
+}

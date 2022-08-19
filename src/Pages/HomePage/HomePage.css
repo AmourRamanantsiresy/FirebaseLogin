@@ -1,0 +1,51 @@
+.hp--outLog {
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+    -2px -2px 5px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.2s;
+}
+
+.hp--in--outLog {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    transition: box-shadow 0.2s, font-size 0.2s;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+}
+
+.hp--outLog:hover .hp--in--outLog{
+    box-shadow: none;
+    font-size: 25px;
+}
+
+.hp--outLog:active{
+    box-shadow: none;
+}
+
+.hp-navbar {
+    padding-inline: 3vh;
+    padding-block: 2vh;
+}
+
+.hp--card{
+    height: 70vh;
+    width: 90vw;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.hp-profilePic{
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.hp-profilePic> img{
+    border-radius: 50%;
+    width: 2.5rem;
+}

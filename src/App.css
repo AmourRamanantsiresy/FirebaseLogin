@@ -1,0 +1,9 @@
+.app--snackbar{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 20rem;
+    z-index: 9000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px rgba(0, 0, 0, 0.3);
+}

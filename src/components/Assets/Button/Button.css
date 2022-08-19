@@ -1,0 +1,23 @@
+.custom-button {
+    background: none;
+    outline: none;
+    appearance: none;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border: none;
+    font-size: 16px;
+    border-radius: 0.4rem;
+    color: #414141;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.btn--light {
+    transition: font-size 0.1s, box-shadow 0.1s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.btn--light:active {
+    box-shadow: none;
+    /*box-shadow: inset 1px 1px 3px rgba(0,0,0,0.5),inset -1px -1px 3px rgba(255,255,255,0.5);*/
+    font-size: 14px;
+}

@@ -1,0 +1,21 @@
+.loading-rounded {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    animation: animation 2s linear infinite;
+}
+
+.loading-rounded--second {
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+}
+
+@keyframes animation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
