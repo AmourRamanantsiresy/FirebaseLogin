@@ -24,6 +24,8 @@ function App() {
                     id: user.uid,
                     token: user.refreshToken || 'token',
                     email: user.email || 'email',
+                    name: user.displayName || '',
+                    profilePic: user.photoURL || ''
                 }));
             } else {
                 setState((initialState) => ({
