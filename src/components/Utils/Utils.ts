@@ -40,7 +40,7 @@ export const setSnackBarMessage = (setAlert: DS<IAlertState>, label: string): vo
     setAlert({ label, open: true, type: 'Message' });
 };
 
-export const getLoginType = (url?: string): LoginType{
+export const getLoginType = (url?: string): LoginType => {
     if(url !== undefined){
         if(url.includes('github')){
             return 'github'
